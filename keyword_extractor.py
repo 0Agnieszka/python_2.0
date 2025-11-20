@@ -283,9 +283,11 @@ def main(page: ft.Page):
 # ----------------------------
 # Uruchomienie (desktop)
 # ----------------------------
+# Change the last part of your code to:
 if __name__ == "__main__":
     try:
-        ft.app(target=main, view=ft.AppView.FLET_APP)
+        ft.app(target=main, view=ft.WEB_BROWSER)
     except Exception as e:
         print(f"Błąd podczas uruchamiania aplikacji: {e}")
+
         input("Naciśnij Enter, aby zakończyć...")
